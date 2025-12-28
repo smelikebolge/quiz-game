@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+        <div class="globe globe-3"></div>
+    </div>
+
+    <div class="glass-card">
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen active">
+            <h1>Quiz Oyunu</h1>
+            <p>Google Antigravity ile Vibe Coding Ödevi</p>
+            <button id="start-btn" class="btn primary-btn">Başlat</button>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" class="screen">
+            <div class="header">
+                <div id="score-display">Score: 0 / 5</div>
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+
+            <h2 id="question-text">Question goes here?</h2>
+
+            <div id="answer-buttons" class="btn-grid">
+                <!-- Buttons will be generated via JS -->
+            </div>
+
+            <button id="next-btn" class="btn secondary-btn hidden">Sonraki</button>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="screen">
+            <h2>Quiz Completed!</h2>
+            <p id="final-score-text">Your Score: 3 / 5</p>
+            <div id="vibe-message">Not bad!</div>
+            <button id="restart-btn" class="btn primary-btn">Tekrar Oyna</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
